@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/maps.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">	
+        <link rel="stylesheet" href="css/css-bootstrap/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="css/css-bootstrap/bootstrap.min.css" type="text/css">
+    
+        <title>MobUrb - Maps</title>
+</head>
+<body onload="initMap()">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="maps.html">MobUrb</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="maps.html">Map</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="sumo.html">Sumo</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+
+
+        <div style="display:flex; justify-content: center; margin-top: 30px;">
+            <div id="floating-panel">
+                <b>Tipos de veículos: </b>
+                <select id="vehicles" onchange="plotMapAndDoAll()">
+                    <option selected id="all" value="Todos">Todos</option>
+                    <option id="car" value="Carro">Carro</option>
+                    <option id="motorcycle" value="Moto">Moto</option>
+                    <option id="bike" value="Bicicleta">Bicicleta</option>
+                    <option id="bus" value="Ônibus">Ônibus</option>
+                    <option id="truck" value="Caminhão">Caminhão</option>
+                    <option id="not informed" value="Não Informar">Não Informado</option>
+                </select>
+            </div>
+        </div>
+   
+        <div id="map">
+    
+        </div>
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoW2bVZsMgkyDUmd1feyn-b5MM57xGFTI&callback=initMap"></script>    
+        <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+        <script src="js/firebase.js"></script>
+        <script src="js/jquery-3.3.1.js"></script>       
+        <script src="js/js-bootstrap/bootstrap.min.js"></script>
+        <script src="js/js-bootstrap/bootstrap.js"></script>
+        <script src="js/maps.js"></script>
+
+</body>
+</html>
