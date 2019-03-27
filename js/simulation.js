@@ -67,9 +67,9 @@ function getFireBaseData() {
                 jsonList.push(json)
         }
 
-        //calcRoute(jsonList)
+        calcRoute(jsonList)
 
-        // sendSimulationData(jsonList) - TIRAR O COMENTÁRIO DEPOIS
+        sendSimulationData(jsonList)
     });
 }
 
