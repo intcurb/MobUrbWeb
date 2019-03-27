@@ -60,7 +60,7 @@ function getFireBaseData() {
                 'finishDate': dados[index].finishDate,
                 'initDate': dados[index].initDate,
                 'listOfLocation': nodeListCoordinates,
-                'meanOfTransport': dados[index].meansOfTransport
+                'meansOfTransport': dados[index].meansOfTransport
             }
 
             if (insert)
